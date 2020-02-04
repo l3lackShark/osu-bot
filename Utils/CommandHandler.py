@@ -13,7 +13,8 @@ def handle(user, msg, ircClient, conf, api):
 		'!mods' : IrcCommands.Mods,
 		'!discord' : IrcCommands.Discord,
 		'!help' : IrcCommands.Help,
-		'default' : IrcCommands.Default
+		'default' : IrcCommands.Default,
+		'!request' : IrcCommands.Request
 	}
 	actualCommand = parseCommand(msg, commandSwitch.keys())
 	commandFile = commandSwitch[actualCommand]
